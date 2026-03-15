@@ -1,6 +1,6 @@
 {
   "name": "@orchestra-mcp/icons",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "React SVG icon components for Orchestra MCP",
   "type": "module",
   "main": "./dist/index.js",
@@ -12,12 +12,25 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     },
-    "./code": { "import": "./dist/code/index.js", "types": "./dist/code/index.d.ts" },
-    "./launcher": { "import": "./dist/launcher/index.js", "types": "./dist/launcher/index.d.ts" },
-    "./boxicons": { "import": "./dist/boxicons/index.js", "types": "./dist/boxicons/index.d.ts" }
+    "./code": {
+      "import": "./dist/code/index.js",
+      "types": "./dist/code/index.d.ts"
+    },
+    "./launcher": {
+      "import": "./dist/launcher/index.js",
+      "types": "./dist/launcher/index.d.ts"
+    },
+    "./boxicons": {
+      "import": "./dist/boxicons/index.js",
+      "types": "./dist/boxicons/index.d.ts"
+    }
   },
-  "files": ["dist"],
-  "publishConfig": { "access": "public" },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/orchestra-mcp/icons"
@@ -25,7 +38,7 @@
   "funding": "https://github.com/sponsors/fadymondy",
   "license": "MIT",
   "dependencies": {
-        "@resvg/resvg-js": "^2.6.2",
+    "@resvg/resvg-js": "^2.6.2",
     "boxicons": "^2.1.4"
   },
   "peerDependencies": {
@@ -43,5 +56,11 @@
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
     "prepublishOnly": "pnpm build"
   },
-  "keywords": ["orchestra", "mcp", "react", "components", "icons"]
+  "keywords": [
+    "orchestra",
+    "mcp",
+    "react",
+    "components",
+    "icons"
+  ]
 }
